@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center></center>
+        <h1>display_dept</h1>
+        <table border="3px">
+            <tr>
+                <th>pk/id</th>
+                <th>deptno</th>
+                <th>dept name</th>
+                <th>loc</th>
+                
+            </tr>
+        {% for wo in depts %}
+            <tr>
+                <td>{{WO.pk}}</td>
+                <td>{{wo.deptno}}</td>
+                <td>{{wo.dname}}</td>
+                <td>{{wo.loc}}</td>
+               
+            </tr>
+        {% endfor %}
+
+
+
+
+        </table>
+
+
+
+
+
+
+    </center>
+</body>
+</html>
